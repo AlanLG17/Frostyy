@@ -6,7 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: url('ruta/a/tu/imagen.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
     display: flex;
     justify-content: center;
@@ -19,7 +20,7 @@ body {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
 }
@@ -113,4 +114,5 @@ body {
     height: 20px;
     margin-right: 8px;
 }
+
 
