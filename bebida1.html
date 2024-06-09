@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebida Refrescante</title>
+    <link rel="stylesheet" href="bebidas.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product-image">
+            <img src="bebida1.png" alt="Bebida Refrescante">
+        </div>
+        <div class="product-details">
+            <h1>Bebida Refrescante</h1>
+            <p class="price">$150.00</p>
+            <p class="description">
+                Disfruta de esta bebida refrescante con un sabor único y delicioso. Perfecta para cualquier ocasión.
+            </p>
+            <div class="order">
+                <label for="quantity">Cantidad:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+                <button onclick="order()">Ordenar</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function order() {
+            const quantity = document.getElementById('quantity').value;
+            alert(`Has ordenado ${quantity} bebida(s) refrescante(s).`);
+        }
+    </script>
+</body>
+</html>
