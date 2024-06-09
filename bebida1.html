@@ -20,15 +20,17 @@
             <div class="order">
                 <label for="quantity">Cantidad:</label>
                 <input type="number" id="quantity" name="quantity" min="1" value="1">
-                <button onclick="order()">Ordenar</button>
+                <button onclick="addToCart()">Añadir al carrito</button>
             </div>
         </div>
     </div>
     <script>
-        function order() {
+        function addToCart() {
             const quantity = document.getElementById('quantity').value;
-            alert(`Has ordenado ${quantity} bebida(s) refrescante(s).`);
+            localStorage.setItem('cartQuantity', quantity);
+            window.location.href = 'cart.html';
         }
     </script>
 </body>
 </html>
+
