@@ -13,6 +13,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    filter: blur(10px); /* Aquí puedes ajustar el nivel de desenfoque que desees */
+    z-index: -1; /* Esto colocará la capa detrás del contenido principal */
+    opacity: 0.5; /* Puedes ajustar la opacidad según tus preferencias */
 }
 
 .container {
@@ -114,5 +117,6 @@ body {
     height: 20px;
     margin-right: 8px;
 }
+
 
 
