@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Carrito de Compras</h1>
+        <div class="cart-details">
+            <p id="cartQuantity"></p>
+            <p class="price">$<span id="totalPrice"></span></p>
+            <button onclick="checkout()">Proceder al pago</button>
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            const quantity = localStorage.getItem('cartQuantity');
+            const pricePerItem = 150;
+            const totalPrice = quantity * pricePerItem;
+            
+            document.getElementById('cartQuantity').textContent = `Cantidad: ${quantity} bebida(s) refrescante(s)`;
+            document.getElementById('totalPrice').textContent = totalPrice;
+        }
+
+        function checkout() {
+            alert('Gracias por su compra!');
+        }
+    </script>
+</body>
+</html>
