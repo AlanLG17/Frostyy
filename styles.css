@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    width: 90%; /* Cambiado del 80% al 90% para dispositivos móviles */
+    width: 80%; /* Cambiado del 80% al 90% para dispositivos móviles */
     margin: 20px auto;
     padding: 20px;
     background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
