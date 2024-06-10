@@ -9,15 +9,10 @@ body {
     background: url('fondos.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
 .container {
-    width: 80%;
-    max-width: 1200px;
+    width: 90%; /* Cambiado del 80% al 90% para dispositivos móviles */
     margin: 20px auto;
     padding: 20px;
     background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
@@ -28,32 +23,33 @@ body {
 .highlight-box {
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     color: #fff;
-    padding: 40px 20px;
+    padding: 20px; /* Reducción del padding */
     text-align: center;
     border-radius: 12px;
     margin-bottom: 30px;
 }
 
 .highlight-text {
-    font-size: 1em;
+    font-size: 1.2em; /* Reducción del tamaño de la fuente */
     font-weight: bold;
-    line-height: 1.3;
+    line-height: 1.5;
 }
 
 .info-section {
     display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en dispositivos pequeños */
     justify-content: space-between;
     margin-bottom: 30px;
-    gap: 20px;
 }
 
 .info-box {
-    flex: 1;
+    flex-basis: calc(33.33% - 20px); /* Ajuste para dispositivos pequeños */
     background: #f0f0f0;
-    padding: 30px;
+    padding: 20px; /* Reducción del padding */
     border-radius: 12px;
     text-align: center;
     transition: transform 0.3s, background 0.3s;
+    margin-bottom: 20px; /* Espacio entre las cajas */
 }
 
 .info-box:hover {
@@ -62,39 +58,38 @@ body {
 }
 
 .info-box h2 {
-    margin-bottom: 15px;
-    font-size: 1.5em;
+    margin-bottom: 10px; /* Reducción del espacio entre los títulos y los párrafos */
+    font-size: 1.2em; /* Reducción del tamaño de la fuente */
     color: #444;
 }
 
 .info-box p {
-    font-size: 1.1em;
+    font-size: 1em; /* Reducción del tamaño de la fuente */
     color: #666;
     line-height: 1.5;
 }
 
 .contact-section {
     text-align: center;
-    padding: 30px 20px;
+    padding: 20px; /* Reducción del padding */
     background: #333;
     color: #fff;
     border-radius: 12px;
 }
 
 .contact-section h2 {
-    margin-bottom: 15px;
-    font-size: 1.5em;
+    margin-bottom: 10px; /* Reducción del espacio entre los títulos y los párrafos */
+    font-size: 1.2em; /* Reducción del tamaño de la fuente */
     color: #fff;
 }
 
 .contact-section p {
-    font-size: 1.1em;
+    font-size: 1em; /* Reducción del tamaño de la fuente */
     line-height: 1.5;
 }
 
 .instagram-button {
-    display: inline-flex;
-    align-items: center;
+    display: inline-block; /* Cambiado de flex a inline-block */
     background: #E1306C;
     color: #fff;
     padding: 8px 16px;
@@ -114,5 +109,4 @@ body {
     height: 20px;
     margin-right: 8px;
 }
-
 
